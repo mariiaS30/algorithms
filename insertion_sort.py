@@ -1,14 +1,19 @@
 a = [5, 6, 2, 0, 9, 1, 3]
 print(a)
 
-insert_number = 0
-
+index = 0
+i = len(a) - 2
 for k in range(len(a)-1):
-    now_number = a[k]
-    # for i in range(k-1, 0, -1):
-    #     if a[k] < a[i]:
-    #         a[i], a[k] = a[k], a[i]
+    now_number = a[-1]
+    while now_number < a[i]:
+        i = i-1
+    
+    index = i + 1
+    print(index)
+    for j in range(len(a)-1, index, -1):
+        a[j] = a[j-1]
+    # a[index] = now_number    
 
-print(a) 
+# print(a) 
 
-b = [1, 3, 5, 2]
+#исправить ошибку с index
