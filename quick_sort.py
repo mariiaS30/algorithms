@@ -3,6 +3,7 @@
 # a = [3, 0, 1, 8, 7, 2, 5, 4, 9, 6]
 # a = [0, 7, 8, 3, 2, 9, 1, 4, 5]
 # a = [98, 6, 7, 30, 12, 4, 0, 98, 7,0, 30, 98]
+#a = [1, 4, 7, 3, 9, 0, 24]
 def quick_sort(a):
     smaller = []
     equal = []
@@ -20,5 +21,5 @@ def quick_sort(a):
                 larger.append(a[i])
         return quick_sort(smaller) + equal + quick_sort(larger)
         
-print(quick_sort(a))
+#print(quick_sort(a))
 
